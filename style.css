@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height:100vh; 
+  }
+
 #navbar{
     display: flex;
     align-items: center;
@@ -32,15 +36,42 @@ nav .item a{
 }
 
 /* .world{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .world img{
-   margin-top: 4em;
-   width: 90%;
+   width: 75%;
 }
+ */
+
+
+.world {
+    overflow: hidden;
+  }
+  
+.sliding-background {
+    margin-top: 4em;
+    background: url("./img/dotted-map.png") repeat-x;
+    height: 100vh;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+  }
+
+  @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-1692px, 0, 0); /* The image width */
+    }
+  }
+
+
+
 
 
 @media all and (max-width:500px){
@@ -52,9 +83,17 @@ nav .item a{
       z-index: 2;
     }
 
-    .world img{
-        margin-top: 7em;
-        width: 890px;
-        padding: 1em;
-     }
+    .world {
+        overflow: hidden;
+      }
+      
+    .sliding-background {
+        height: 500px;
+        width: 5076px;
+      }
+
+  /*   .world img{
+        overflow: scroll;
+        background-size: 100% 100%;
+     } */
 }    
