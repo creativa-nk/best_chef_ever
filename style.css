@@ -10,7 +10,10 @@
     justify-content: space-between;
     background: rgb(3, 3, 3);
     height: 4em;
+    width: 100vw;
     color: white;
+    position: fixed;
+
 }
 .menu{
     display: flex;
