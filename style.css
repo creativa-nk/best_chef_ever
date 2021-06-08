@@ -12,8 +12,6 @@
     height: 4em;
     width: 100vw;
     color: white;
-    position: fixed;
-
 }
 .menu{
     display: flex;
@@ -32,3 +30,31 @@ nav .item a{
     letter-spacing: 3px;
     word-spacing: 5px;
 }
+
+/* .world{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.world img{
+   margin-top: 4em;
+   width: 90%;
+}
+
+
+@media all and (max-width:500px){
+  
+    #navbar{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+    }
+
+    .world img{
+        margin-top: 7em;
+        width: 890px;
+        padding: 1em;
+     }
+}    
