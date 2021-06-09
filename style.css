@@ -4,15 +4,34 @@
     box-sizing: border-box;
 }
 
+body{
+  background: rgb(124, 226, 251);
+  height: 100vh;
+  width: 100vw;
+}
+
+
 html{
     height:100vh; 
-  }
+}
+
+header {
+  top: 0;
+  background: rgb(3, 3, 3);
+  height: 4em;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
 
 #navbar{
+    display: -webkit-box;
+  	display: -webkit-flex;
+	  display: -ms-flexbox;
+    flex-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgb(3, 3, 3);
     height: 4em;
     width: 100vw;
     color: white;
@@ -48,27 +67,32 @@ nav .item a{
 }
  */
 
-
+#world{
+  display: block;
+  z-index: -1;
+  
+}
 .world {
-    overflow: hidden;
-  }
+  display: flex; 
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
   
 .sliding-background {
-    margin-top: 4em;
-    background: url("./img/dotted-map.png") repeat-x;
-    height: 100vh;
-    width: 5076px;
-    animation: slide 40s linear infinite;
+    height: 80%;
+   /*  animation: slide 40s linear infinite; */
   }
 
-  @keyframes slide {
+/*   @keyframes slide {
     0%{
       transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(-1692px, 0, 0); /* The image width */
+      transform: translate3d(-1602px, 0, 0); /* The image width 
     }
-  }
+  } */
 
 
 
@@ -78,12 +102,34 @@ nav .item a{
   
     #navbar{
       position: fixed;
-      width: 100%;
+      width: 100vw;
       top: 0;
       z-index: 2;
     }
+    .sliding-background{
+      display: none;
+    }
+    .sliding-background-movil {
+      background: url("./img/dotted-map-mobil.png") no-repeat;
+      background-position: left;
+      background-attachment:scroll;
+      position: relative;
+      margin-left: 1em;
+      width: 920px;
+      height: 100%;
+      z-index: 1;
+    }
 
-    .world {
+    nav .item a{
+      font-size: 0.3em;
+    }
+    .world{
+      width: 950px;
+      overflow: scroll;
+    }
+
+
+  /*   .world {
         overflow: hidden;
       }
       
@@ -92,10 +138,12 @@ nav .item a{
         background: url("./img/dotted-map-mobil.png") repeat-x;
         height: 500px;
         width: 5076px;
-      }
-
-  /*   .world img{
-        overflow: scroll;
-        background-size: 100% 100%;
-     } */
+      } */ 
 }    
+
+#texto{
+  margin-top: 8em;
+  position: relative;
+  left: 0;
+  right: 0;
+}
