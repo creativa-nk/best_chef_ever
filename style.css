@@ -53,7 +53,7 @@ nav .item a{
     overflow: hidden;
   }
   
-.sliding-background {
+#sliding-background {
     margin-top: 4em;
     background: url("./img/dotted-map.png") repeat-x;
     height: 100vh;
@@ -63,11 +63,11 @@ nav .item a{
     
   }
 
- .sliding-background:hover {       /* !!!!!IMPORTANTE */
-  -webkit-animation-play-state:paused;
-  -moz-animation-play-state:paused;
-  -o-animation-play-state:paused;
-  animation-play-state:paused;
+ #sliding-background {       /* !!!!!IMPORTANTE */
+  -webkit-animation-play-state:running;
+  -moz-animation-play-state:running;
+  -o-animation-play-state:running;
+  animation-play-state:running;
 } 
 
 
