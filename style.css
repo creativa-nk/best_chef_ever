@@ -55,11 +55,14 @@ nav .item a{
   
 #sliding-background {
     margin-top: 7em;
-    background: url("./img/dotted-map.png") repeat-x;
+    background: url("./img/dotted-map-capas.png") repeat-x;
+    background-size: 130vh;
     height: 100vh;
-    width: 10098px;
+    width: 6732px;
     animation: slide 30s linear infinite;
+    animation-direction: alternate; 
     cursor: pointer;
+    z-index: -1;
   }
 
  #sliding-background {       /* !!!!!IMPORTANTE */
@@ -76,12 +79,9 @@ nav .item a{
       transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(-1692px, 0, 0); /* The image width */
+      transform: translate3d(-1683px, 0, 0); /* The image width */
     }
   }
-
-
-
 
 
 @media all and (max-width:500px){
@@ -109,3 +109,72 @@ nav .item a{
         background-size: 100% 100%;
      } */
 }    
+
+/* -----------------img--------------- */
+
+.imagenes{
+  /* background: red; */
+  display: flex;
+  justify-content: space-around;
+  height: 3px;
+}
+img{
+  height: 6em;
+  width: auto;
+  border-radius: 3px;
+}
+.img{
+  position: relative;
+  z-index: 3;
+}
+.uno{
+  height: 10em;
+  top: 13em;
+  animation: showup 8s infinite;
+  /* top: 0; */
+ /*  animation: baja 6s ease 0s infinite normal none; */
+}
+.dos{
+  top: 33em;
+  animation: showup 7s infinite;
+}
+
+.tres{
+  top: 20em;
+  animation: showup 10s infinite;
+}
+
+.cuatro{
+  top: 30em;
+  height: 12em;
+  animation: showup 5s infinite;
+}
+
+.cinco{
+  top: 10em;
+  animation: showup 8.3s infinite;
+}
+
+@keyframes baja {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, 13em, 0); 
+  }
+}
+
+
+
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    50% {opacity:1;/* filter:drop-shadow(5px 12px 5px rgba(126, 126, 126, 0.555)) */}
+    70% {opacity:1;filter:drop-shadow(9px 12px 3px rgba(121, 120, 120, 0.4))}
+    90% {opacity:1;}
+    100% {opacity:0;}
+}
+
+  
+  
