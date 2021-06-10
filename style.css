@@ -9,6 +9,7 @@ body{
   height: 100vh;
   width: 100vw;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -129,10 +130,40 @@ nav .item a{
       } */ 
 }    
 
-#texto{
+#experience{
   display: block;
-    margin-block-start: 10em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+}
+#experience h1{
+  letter-spacing: 3px;
+  word-spacing: 7px;
+  text-align: center;
+  /* margin-bottom: 1.5em; */
+}
+
+.text-experiense{
+  margin: 0 auto;
+  /* background: chartreuse; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50em;
+  width: 50%;
+  
+}
+.exp{
+  display: flex;
+  justify-content: space-between;
+}
+.exp p{
+  width: 70%;
+}
+.exp strong{
+  text-transform: uppercase;
+}
+
+@media all and (max-width:500px){
+  .text-experiense{
+    height: 80em;
+    width: 90%;
+  }
 }
