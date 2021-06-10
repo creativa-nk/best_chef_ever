@@ -5,9 +5,10 @@
 }
 
 body{
-  background: rgb(124, 226, 251);
+  background: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
+  color: white;
 }
 
 
@@ -54,36 +55,28 @@ nav .item a{
     word-spacing: 5px;
 }
 
-/* .world{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.world img{
-   width: 75%;
-}
- */
-
 #world{
   display: block;
   z-index: -1;
-  
 }
-.world {
+.world{
   display: flex; 
-  width: 100%;
-  height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
 }
+.world, .world-movil {
+  width: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.world-movil{
+  display: none;
+}
+
   
 .sliding-background {
-    height: 80%;
-   /*  animation: slide 40s linear infinite; */
-  }
+  margin: 2em 0 2em 1.5em;
+}
 
 /*   @keyframes slide {
     0%{
@@ -94,9 +87,20 @@ nav .item a{
     }
   } */
 
+@media all and (max-width:1024px){
+  .world{
+    display: none;
+  }
 
-
-
+  .world-movil{
+    display: flex;
+  }
+  
+  .sliding-background-movil {
+    margin: 2em 0 2em 1.5em;
+    /* filter: drop-shadow(0px 0px 5px rgb(81, 82, 126)); */
+  }
+}
 
 @media all and (max-width:500px){
   
@@ -106,27 +110,11 @@ nav .item a{
       top: 0;
       z-index: 2;
     }
-    .sliding-background{
-      display: none;
-    }
-    .sliding-background-movil {
-      background: url("./img/dotted-map-mobil.png") no-repeat;
-      background-position: left;
-      background-attachment:scroll;
-      position: relative;
-      margin-left: 1em;
-      width: 920px;
-      height: 100%;
-      z-index: 1;
-    }
-
+    
     nav .item a{
       font-size: 0.3em;
     }
-    .world{
-      width: 950px;
-      overflow: scroll;
-    }
+   
 
 
   /*   .world {
@@ -142,8 +130,9 @@ nav .item a{
 }    
 
 #texto{
-  margin-top: 8em;
-  position: relative;
-  left: 0;
-  right: 0;
+  display: block;
+    margin-block-start: 10em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
