@@ -15,10 +15,12 @@ const menu = document.querySelector('.menu');
 function toggleMenu(){
     const toggle = document.querySelector('.toggle');
     const menu = document.querySelector('.menu');
+    const btn_X = document.querySelector('.btn_X');
     
     if(menu.style.top = '-100vh'){
         menu.style.top = '0';
-        toggle.querySelector('a').innerHTML = "<i class='fas fa-times'></i>"; /* cambia las 3 barras por X  */
+        btn_X.style.display = 'block'
+       
     }else{
         menu.style.top = '-100vh' 
     }
