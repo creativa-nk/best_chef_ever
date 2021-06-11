@@ -195,7 +195,7 @@ nav .item a{
 }
 
 .text-experiense{
-  margin: 0 auto;
+  margin: 1.2em auto;
   /* background: chartreuse; */
   display: flex;
   flex-direction: column;
@@ -208,7 +208,7 @@ nav .item a{
 .exp{
   display: flex;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 2.5em;
   width: 90%;
   padding: 0.5em;
 }
