@@ -191,6 +191,7 @@ nav .item a{
   letter-spacing: 3px;
   word-spacing: 7px;
   text-align: center;
+  padding: 1em;
   /* margin-bottom: 1.5em; */
 }
 
@@ -208,7 +209,7 @@ nav .item a{
 .exp{
   display: flex;
   justify-content: space-between;
-  margin-top: 2.5em;
+  margin-top: 2.8em;
   width: 90%;
   padding: 0.5em;
 }
@@ -226,4 +227,9 @@ nav .item a{
   .exp p{
     width: 70%;
   }
+}
+
+
+.separador{
+  height: 36em;
 }
