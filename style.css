@@ -40,7 +40,7 @@ header {
 }
 .toggle{
   display: none;
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 .btn_X {
@@ -64,54 +64,6 @@ nav .item a{
     word-spacing: 5px;
 }
 
-#world{
-  display: block;
-  z-index: -1;
-}
-.world{
-  display: flex; 
-  align-items: center;
-  justify-content: center; 
-}
-.world, .world-movil {
-  width: auto;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.world-movil{
-  display: none;
-}
-
-  
-.sliding-background {
-  margin: 10em 0 2em 1.5em;
-}
-
-   @keyframes slide {
-    0%{
-      transform: translate3d(0, 0, 0);
-    }
-    100%{
-      transform: translate3d(-70%, 0, 0); 
-    }
-  } 
-
-@media all and (max-width:1024px){
-  .world{
-    display: none;
-  }
-
-  .world-movil{
-    display: flex;
-  }
-  
-  .sliding-background-movil {
-    margin: 2em 0 2em 1.5em;
-    animation: slide 10s linear infinite;
-    animation-direction: alternate;
-    /* filter: drop-shadow(0px 0px 5px rgb(81, 82, 126)); */
-  }
-}
 
 @media all and (max-width:768px){
 .toggle{
@@ -163,9 +115,11 @@ nav .item a{
       z-index: 2;
     }
     
-    .menu{
+    .logo{
+      margin-left:1em;
+      font-weight: bold;
       
-    }
+  }
    
 
 
@@ -183,8 +137,56 @@ nav .item a{
 /* -------------------EXPERIENCE-------------------- */
 
 #experience{
+  margin-top: 4em;
   display: block;
 }
+/* -------animacion------------------ */
+.world{
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+}
+.world, .world-movil {
+  width: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.world-movil{
+  display: none;
+}
+  
+.sliding-background {
+  margin: 10em 0 2em 1.5em;
+}
+
+   @keyframes slide {
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(-70%, 0, 0); 
+    }
+  } 
+
+@media all and (max-width:1024px){
+  .world{
+    display: none;
+  }
+
+  .world-movil{
+    display: flex;
+  }
+  
+  .sliding-background-movil {
+    margin: 2em 0 2em 1.5em;
+    animation: slide 10s linear infinite;
+    animation-direction: alternate;
+    /* filter: drop-shadow(0px 0px 5px rgb(81, 82, 126)); */
+  }
+}
+
+/* -------TEXTO----------- */
+
 #experience h1{
   letter-spacing: 3px;
   word-spacing: 7px;
