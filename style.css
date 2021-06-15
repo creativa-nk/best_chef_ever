@@ -138,8 +138,8 @@ nav .item a{
 
 #experience{
   margin-top: 4em;
-  display: block;
 }
+
 /* -------animacion------------------ */
 .world{
   display: flex; 
@@ -151,7 +151,8 @@ nav .item a{
   overflow-x: auto;
   white-space: nowrap;
 }
-.sliding-background-movil{
+
+.world-movil{
   display: none;
 }
   
@@ -173,17 +174,42 @@ nav .item a{
     display: none;
   }
   .world-movil{
-    overflow: hidden;
+    display: inline;
+    position: relative;
+    overflow-x: hidden;
   }
 
   .sliding-background-movil {
     display: flex;
+    position: absolute;
+    z-index: 4;
     background: url('./img/dotted-map-blanco-movil.png') repeat-x;
+    width: 2841px;
+    height: 71vh;
+    margin: 2.3em 0 1em 1em;
+    animation: slide 20s linear infinite;
+  }
+  .sliding-background-movil-fotos {
+    display: flex;
+    position: absolute;
+    z-index:5 ;
+    background: url('./img/dotted-map-movil-fotos.png') repeat-x;
+    width: 2841px;
+    height: 71vh;
+    margin: 2.3em 0 1em 1em;
+    animation: slide 13s linear infinite;
+  }
+  .sliding-background-movil-fotos2 {
+    display: flex;
+    position: absolute;
+    z-index:3 ;
+    background: url('./img/dotted-map-movil-fotos2.png') repeat-x;
     width: 2841px;
     height: 71vh;
     margin: 2.3em 0 1em 1em;
     animation: slide 15s linear infinite;
   }
+
 }
 
 /* -------TEXTO----------- */
@@ -199,6 +225,8 @@ nav .item a{
 .text-experiense{
   margin: 1.2em auto;
   /* background: chartreuse; */
+  position: relative;
+  top: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
