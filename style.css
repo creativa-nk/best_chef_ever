@@ -151,7 +151,7 @@ nav .item a{
   overflow-x: auto;
   white-space: nowrap;
 }
-.world-movil{
+.sliding-background-movil{
   display: none;
 }
   
@@ -164,7 +164,7 @@ nav .item a{
       transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(-70%, 0, 0); 
+      transform: translate3d(-947px, 0, 0); 
     }
   } 
 
@@ -172,16 +172,17 @@ nav .item a{
   .world{
     display: none;
   }
-
   .world-movil{
-    display: flex;
+    overflow: hidden;
   }
-  
+
   .sliding-background-movil {
-    margin: 2em 0 2em 1.5em;
-    animation: slide 10s linear infinite;
-    animation-direction: alternate;
-    /* filter: drop-shadow(0px 0px 5px rgb(81, 82, 126)); */
+    display: flex;
+    background: url('./img/dotted-map-blanco-movil.png') repeat-x;
+    width: 2841px;
+    height: 71vh;
+    margin: 2.3em 0 1em 1em;
+    animation: slide 15s linear infinite;
   }
 }
 
@@ -223,6 +224,7 @@ nav .item a{
 @media all and (max-width:500px){
   .text-experiense{
     width: 100%;
+    overflow-x: hidden;
   }
   .exp p{
     width: 70%;
