@@ -25,6 +25,19 @@ header {
   position: fixed;
   z-index: 100;
 }
+#header-title-scroll-down {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.4;
+  overflow-x: visible; 
+}
 
 #navbar{
     display: -webkit-box;
@@ -175,7 +188,7 @@ nav .item a{
   }
   .contenedor_img_slider{
     width: 100vw;
-    height: 78vh;
+    height: 90vh;
     position: relative;
     overflow: hidden;
   }
