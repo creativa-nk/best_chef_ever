@@ -29,3 +29,16 @@ function toggleMenu(){
 function closeNav(){
     document.querySelector('.menu').style.top ='-100vh'  
 }
+
+
+
+//cuando usamos el scrolls down 50px desde arriba, desaparece la flecha de scroll down
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+     document.getElementById("header-title-scroll-down").style.display = "none"; 
+  } else {
+    document.getElementById("header-title-scroll-down").style.display = "block";
+  }
+}

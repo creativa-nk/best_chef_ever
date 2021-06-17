@@ -5,7 +5,7 @@
 }
 
 body{
-  background: rgba(0, 0, 0, 0.920);
+  background: rgba(0, 0, 0, 0.9);
   height: 100vh;
   width: 100vw;
   color: white;
@@ -134,19 +134,157 @@ nav .item a{
       
   }
    
+} 
+
+/* -------------------ABOUT ME ----------------------------- */
+
+#about_me{
+  display: flex;
+  align-items: center;
+  width: 150vw;
+  overflow: hidden;
+}
+.frase{
+ /*  background: chocolate; */
+  padding: 5em;
+  margin-left: 2em;
+  font-size: 2em;
+  height: 10em;
+  width: 40em;
+  line-height: 1.7em;
+}
+.texto_aboutme{
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+  height: 60vh;
+  margin-left: 10em;
+}
+.texto_aboutme h1{
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  padding: 1em;
+}
+.texto_aboutme p{
+ padding: 1em;
+ font-size: 1.5em;
+
+}
+
+.contenedor_imgscroll img{
+  padding: 4em;
+  filter: drop-shadow(-50px 10px 20px rgba(0, 0, 0, 0.719));
+}
+.contenedor_img_mediterraneo{
+  display: none;
+}
 
 
-  /*   .world {
-        overflow: hidden;
-      }
+@media all and (max-width:700px){
+
+/*   body{
+      width: 300vw;
+
+  } */
+  #about_me{
+    background:orchid ;
+      overflow-y: hidden;
+      width: 400vw;
+  }
+  .frase{
+      /* background: chocolate; */
+      padding: 0.5em;
+      margin-top: 5em; 
+      margin-left: 1em;
+      font-size: 1em;
+      height: 50vh;
+      width: 40vw;
+      line-height: 1.5em;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+  }
+  .contenedor_imgscroll img{
+      /* background: chartreuse; */
+      padding:1em ;
+      height: 110%;
+      position: absolute;
+      z-index: 2;
+      left: 17vw;
+  }
+  .contenedor_img_mediterraneo img{
+      padding:1em ;
+      margin-left: 280vw;
+      margin-bottom: 0;
+      margin-top: 100%;
+      height: 40%;
+      position: absolute;
+      z-index: 3;
+      left: 17vw; 
+      filter: drop-shadow(-20px 10px 10px rgb(0, 0, 0));
+  }
+
+  .texto_aboutme{
+     /*  background: cornflowerblue; */
+      display: flex;
+      flex-direction: row;
+      width: 380vw;
+      height: 90vh;
+      margin-left: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 4em;
+      margin-left: 100vw;
+      line-height: 1.5em;
+  }
+  .primera_pagina_about_me{
+      /* background: chartreuse; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 80vw;
+      height: 100vh;
+  }
+  .primera_pagina_about_me h1{
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      text-align: right;
+      margin-right: 0.7em;
+  }
+
+  .primer_parrafo{
+      /* background: royalblue; */
+      height: 100%;
+      width: 60%;
+      text-align: right;
+      margin-left: 7em;
+      margin-top: 1em;
+      padding: 1em;
+  }
+  .pagina{
+     /*  background-color: slateblue; */
+      height: 80vh;
+      width: 100vw;
       
-    .sliding-background {
-        margin-top: 7em;
-        background: url("./img/dotted-map-mobil.png") repeat-x;
-        height: 500px;
-        width: 5076px;
-      } */ 
-}    
+  }
+  .parrafo{
+      /* background: darkcyan; */
+      margin: 0 auto;
+      height: 100%;
+      width: 80%;
+      margin-top: 1em;
+      padding: 2em; 
+      font-size: 0.4em;
+  }
+
+}
+
+
+
 /* -------------------EXPERIENCE-------------------- */
 
 #experience{
@@ -193,11 +331,10 @@ nav .item a{
     overflow: hidden;
   }
 
-  .world-movil{
+  .worl 
     top: 0;
     left: 0;
-    width: 100%;
-    
+    /* width: 100%; */
     overflow: hidden;
   }
 
@@ -234,7 +371,7 @@ nav .item a{
 
 }
 
-/* -------TEXTO----------- */
+/* -------EXPERIENCE TEXTO----------- */
 
 #experience h1{
   letter-spacing: 3px;
@@ -282,6 +419,9 @@ nav .item a{
 }
 
 
+
 .separador{
   height: 36em;
 }
+
+
