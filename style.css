@@ -178,7 +178,7 @@ nav .item a{
   padding: 4em;
   filter: drop-shadow(-50px 10px 20px rgba(0, 0, 0, 0.719));
 }
-.contenedor_img_mediterraneo{
+.contenedor_img_mediterraneo img{
   display: none;
 }
 
@@ -190,9 +190,9 @@ nav .item a{
 
   } */
   #about_me{
-      overflow-y: hidden;
-     
+    overflow-y: hidden;
   }
+
   .frase{
       /* background: chocolate; */
       padding: 0.5em;
@@ -296,8 +296,6 @@ nav .item a{
   display: flex; 
   align-items: center;
   justify-content: center; 
-}
-.world {
   width: auto;
   overflow: hidden;
   white-space: nowrap;

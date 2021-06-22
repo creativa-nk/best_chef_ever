@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- !!!IMPORTANTE!!!!  animacion texto experiencia-->
     <title>about_me</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
       </div>   
     <div class="texto_aboutme">
         <div id="primera_pagina" class="primera_pagina_about_me">
-             <h1>About me</h1>
+             <h1  data-aos='fade-left'>About me</h1>
               <p class="primer_parrafo">Since I was a kid I was always trying to know how things worked.
                 Cooking always has been like an experiment, magic alchemy, Meal times were the best time of the day, family gathering around the food planning what to eat next, cooking together.
               </p>
@@ -42,6 +43,14 @@
     </div> 
 </section>
 
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- -------IMPORTANTE!!!!!-- animacion texto experiencia----- -->
+<script>
+  AOS.init({
+      offset:120,
+      duration:1000         /*  empieza cuando estamos haciendo scroll 400px, y dura 1s */
+  });
+</script>
 
     
 </body>
