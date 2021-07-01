@@ -43,14 +43,3 @@ function scrollFunction() {
   }
 }
 
-/* -----------NavBar Movil--------------- */
-menu = $("#navbar_movil ul");
-toggle = $("#navbar_movil ul .menu_movil");
-
-toggle.on("click", function() {
-  if (menu.hasClass("active")) {
-    menu.removeClass("active");
-  } else {
-    menu.addClass("active");
-  }
-});
