@@ -9,7 +9,7 @@
 }) */
 
 
-const toggle = document.querySelector('.toggle');
+/* const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 
 function toggleMenu(){
@@ -28,7 +28,7 @@ function toggleMenu(){
 
 function closeNav(){
     document.querySelector('.menu').style.top ='-100vh'  
-}
+} */
 
 
 
