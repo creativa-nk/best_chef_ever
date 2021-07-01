@@ -42,3 +42,15 @@ function scrollFunction() {
     document.getElementById("header-title-scroll-down").style.display = "block";
   }
 }
+
+/* -----------NavBar Movil--------------- */
+menu = $("#navbar_movil ul");
+toggle = $("#navbar_movil ul .menu_movil");
+
+toggle.on("click", function() {
+  if (menu.hasClass("active")) {
+    menu.removeClass("active");
+  } else {
+    menu.addClass("active");
+  }
+});
