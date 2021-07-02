@@ -8,17 +8,17 @@
 
 body{
   background: rgba(0, 0, 0, 0.9);
-  height: 100vh;
-  width: 100vw;
+ /*  height: 100vh;
+  width: 100vw; */
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
-html{
+/* html{
     height:100vh; 
-}
+} */
 header {
   top: 0;
-/*   background: rgb(3, 3, 3); */
+  background: rgb(3, 3, 3);
   height: 4em;
   width: 100%;
   position: fixed;
@@ -276,7 +276,7 @@ margin-top: -3px;
 }  */
 
 /* -------------------ABOUT ME ----------------------------- */
-
+/* 
 #about_me{
   display: flex;
   align-items: center;
@@ -284,7 +284,7 @@ margin-top: -3px;
   overflow: hidden;
 }
 .frase{
- /*  background: chocolate; */
+
   padding: 5em;
   margin-left: 2em;
   font-size: 2em;
@@ -293,7 +293,7 @@ margin-top: -3px;
   line-height: 1.7em;
 }
 .texto_aboutme{
-  /* background: red; */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -320,20 +320,16 @@ margin-top: -3px;
 .contenedor_img_mediterraneo img{
   display: none;
 }
+ */
+
+/* @media all and (max-width:700px){
 
 
-@media all and (max-width:700px){
-
-/*   body{
-      width: 300vw;
-
-  } */
   #about_me{
     overflow-y: hidden;
   }
 
   .frase{
-      /* background: chocolate; */
       padding: 0.5em;
       margin-top: 5em; 
       margin-left: 1em;
@@ -346,7 +342,7 @@ margin-top: -3px;
       top: 0;
   }
   .contenedor_imgscroll img{
-      /* background: chartreuse; */
+     
       padding:1em ;
       height: 110%;
       position: absolute;
@@ -366,7 +362,7 @@ margin-top: -3px;
   }
 
   .texto_aboutme{
-      /* background: cornflowerblue; */
+     
       display: flex;
       flex-direction: row;
       width: 400vw;
@@ -380,7 +376,7 @@ margin-top: -3px;
       line-height: 1.5em;
   }
   .primera_pagina_about_me{
-      /* background: chartreuse; */
+      
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -396,7 +392,7 @@ margin-top: -3px;
   }
 
   .primer_parrafo{
-      /* background: royalblue; */
+     
       height: 100%;
       width: 60%;
       text-align: right;
@@ -405,14 +401,14 @@ margin-top: -3px;
       padding: 1em;
   }
   .pagina{
-     /*  background-color: slateblue; */
+    
       height: 80vh;
       width: 100vw;
       font-size: 10px;
       
   }
   .parrafo{
-    /*   background: darkcyan; */
+   
       margin: 0 auto;
       height: 100%;
       width: 80%;
@@ -420,6 +416,152 @@ margin-top: -3px;
       padding: 2em; 
   }
 
+} */
+ /* hide scrollbar */
+ ::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.external {
+  /* background: turquoise; */
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.horizontal-scroll-wrapper {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;  /* !!!!IMPORTANTE */
+  height: 100vw;  /* !!!!IMPORTANTE */
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x:hidden;
+  padding: 0;
+  perspective: 1px;
+    transform-style: preserve-3d;
+/*   padding-bottom: 10rem; */
+}
+.img-wrapper {
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  width: 70vw;
+  transform-origin: 50% 50%;
+  transform: rotate(90deg) translateZ(.1px) scale(0.9) translateX(0px) translateY(-3vh);
+  transition: 1s;
+}
+
+#frase{
+  height: 3rem;
+  width: 8rem; 
+  margin-bottom: 20rem;   
+}
+
+.image_chef{
+  width:50vh ;
+  filter: drop-shadow(-50px 10px 20px rgba(0, 0, 0, 0.719));
+}
+
+.about_me{
+  flex-direction: column;
+  height: 3rem;
+  width: 8rem; 
+  text-align: right;  
+}
+.about_me h1{
+  width: 12rem; 
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.los_parrafos{
+  background-image: url('./img/bg-pattern.jpg');
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.719));
+  flex-direction: column;
+  min-height: 80vh;
+  width: 45vh ;
+  height: 100vw;
+}
+.segundo_parrafo p{
+  padding: 1em;
+}
+.parrafo{
+width: 100%;
+padding: 2em;
+}
+.img_aceitunas{
+  /* width: 10vh; */
+  filter:drop-shadow(-2px 17px 10px rgba(0, 0, 0, 0.719));
+}
+/* 
+p {
+  margin-right:3.5em;
+} */
+
+
+
+.slower {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(-7vw) translateY(-25vh);
+}
+.slower1 {
+  transform: rotate(90deg) translateX(10vw) translateY(0);
+}
+.slower2 {
+  transform: rotate(90deg)  translateX(-2vw) translateY(0);
+}
+.slower3 {
+  transform: rotate(90deg)  translateX(-55vw) translateY(0);
+}
+.slower-down {
+  transform: rotate(90deg) translateZ(.15px)  translateX(0%) translateY(5vh) ;
+}
+.faster {
+  transform: rotate(90deg) translateZ(.15px) scale(0.8) translateX(4vh) translateY(12vh) ;
+}
+.faster1 {
+  transform: rotate(90deg) translateZ(.05px) scale(0.8) translateX(0%) translateY(10vh) ;
+}
+.fastest {
+  transform: rotate(90deg) translateZ(.22px) scale(0.7) translateX(-10vh) translateY(-15vh) ;
+}
+.vertical {
+   transform: rotate(90deg) translateZ(-.15px) scale(1.15) translateX(5vh) translateY(-8vh) ;
+}
+.last {
+  transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(0) ;
+}
+.scroll-info, header {
+  position: absolute;
+  left: 1rem;
+}
+
+
+header {
+  bottom: 1rem;
+}
+.scroll-info {
+  top: 1rem;
+}
+
+.scroll-info {
+  display: flex;
+  align-items: center;
+}
+.icon svg {
+    width: 50px;
+    fill: currentcolor;
 }
 
 
