@@ -1,0 +1,236 @@
+* {
+    margin:0;
+    padding:0;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'VT323', sans-serif;
+  }
+  /* ------------ENLACE DE HEADER------------------------------------ */
+header{
+  position:fixed;
+  z-index: 100;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+iframe{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  border-style: none;
+  z-index: 100;
+  margin-top: 0;
+}
+
+/* ----------------------------------------------------------------------- */ 
+  
+  
+  /* Parallax base styles
+    --------------------------------------------- */
+  
+  .parallax {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+  
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .parallax__layer--base {
+    transform: translateZ(0) scale(0.8);
+  }
+  
+  .parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+  }
+
+  .parallax__layer--front2 {
+    transform: translateZ(0) scale(0.9) ;
+  }
+
+  .parallax__layer--front3 {
+    transform: translateZ(-0.1px) /* scale(0.9) */ ;
+  }
+
+  .parallax__layer--front4 {
+    transform: translateZ(-1.4px) scale(2.1) ;
+  }
+
+  .parallax__layer--front {
+    transform: translateZ(-1.4px)  scale(2.1);
+  }
+
+  .parallax__layer--deep {
+    transform: translateZ(-2px) scale(3);
+  }
+
+ 
+  
+  /* add some padding to force scrollbars */
+  .parallax__layer {
+    pointer-events: none;
+  }
+  
+  /* Art */
+  body {
+    background: linear-gradient(#202022 0%, #3e3e3f 100%);
+  }
+  .background {
+    position: absolute;
+    display: block;
+    height: 100vh;
+  }
+  .parallax__layer--deep {
+    padding: 0 100vw;
+    z-index: 7;
+  }
+  .parallax__layer--deep .background {
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 50px;  
+      /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: top center;  
+    background-size: 85vh;
+      background-image:   url('./img_about_me/cita.png');
+  }
+  .parallax__layer--back {
+    padding: 0 100vw;
+    z-index:8;
+  }
+  .parallax__layer--back .background {
+    opacity: 0.9;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    left: 0; 
+     /*  background-repeat: repeat-x; */
+    background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 70vh;
+    background-image: url('./img_about_me/miguel_huelamo.png');
+  
+  }
+  .parallax__layer--front{
+    padding: 0 500vw;
+    z-index: 9;
+  }
+  .parallax__layer--front .background {
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.9;
+   /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 70vh;  
+    background-image: url('./img_about_me/parrafo3.png');
+  }
+
+  .parallax__layer--base{
+    padding: 0 200vw;
+    z-index: 10;
+  }
+  .parallax__layer--base .background {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 250px;
+   /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 100vh;  
+    background-image: url('./img_about_me/primer_parrafo.png');
+  }
+
+  .parallax__layer--front2{
+    padding: 0 300vw;
+    z-index: 9;
+  }
+  .parallax__layer--front2 .background {
+    top: 0;
+    right: 0px;
+    bottom:0;
+    left: 480px;
+   /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 110vh;  
+    background-image: url('./img_about_me/parrafo2_plato.png');
+  }
+
+  .parallax__layer--front3{
+    padding: 0 550vw;
+    z-index: 10;
+  }
+  .parallax__layer--front3 .background {
+    top: 0;
+    right: 0px;
+    bottom:0;
+    left: 1100px;
+   /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 80vh;  
+    background-image: url('./img_about_me/parrafo_last.png');
+  }
+
+  .parallax__layer--front4{
+    padding: 0 570vw;
+    z-index: 9;
+  }
+  .parallax__layer--front4 .background {
+    opacity: 0.92;
+    top: 0;
+    right: 0px;
+    bottom:0;
+    left: 1100px;
+   /*  background-repeat: repeat-x; */
+   background-repeat: no-repeat;
+    background-position: bottom center;  
+    background-size: 90vh;  
+    background-image: url('./img_about_me/aboutMe_imgs.png');
+  }
+
+
+  @media all and (max-width:1024px){
+
+    .parallax__layer--front4{
+      padding: 0 500vw;
+    }
+    .parallax__layer--front4 .background {
+      left: 2500px;
+      background-size: 110vh;  
+    }
+  }
+
+
+  @media all and (max-width:425px){
+    .parallax__layer--front3 .background {
+      left: 800px;
+
+    }
+
+    .parallax__layer--front4{
+      padding: 0 490vw;
+    }
+    .parallax__layer--front4 .background {
+      left: 1300px;
+      background-size: 100vh;  
+    }
+  }
+
+  }
+
