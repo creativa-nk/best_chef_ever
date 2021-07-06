@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: rgb(32, 31, 31);
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    height:100vh; 
+}
+
+/* ------------ENLACE DE HEADER------------------------------------ */
+header{
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  iframe{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border-style: none;
+    z-index: 100;
+    margin-top: 0;
+  }
+  
+  /* ----------------------------------------------------------------------- */
+
+/* -------------------EXPERIENCE-------------------- */
+
+#experience{
+    margin-top: 4em;
+  }
+  
+  /* -------animacion------------------ */
+  .world{
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  /* .contenedor_img_slider{
+    display: none;
+  } */
+    
+  .sliding-background {
+    margin: 10em 0 2em 1.5em;
+  }
+  
+     @keyframes slide {
+      0%{
+        transform: translate3d(0, 0, 0);
+      }
+      100%{
+        transform: translate3d(-947px, 0, 0); 
+      }
+    } 
+  
+  @media all and (max-width:1024px){
+    .world{
+      display: none;
+    }
+    .contenedor_img_slider{
+      width: 100vw;
+      height: 90vh;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .worl {top: 0;
+      left: 0;
+      /* width: 100%; */
+      overflow: hidden;
+    }
+  
+    .sliding-background-movil {
+      display: flex;
+      position: absolute;
+      z-index: 4;
+      background: url('./img/dotted-map-blanco-movil-marcas.png') repeat-x;
+      width: 2841px;
+      height: 71vh;
+      margin: 2.3em 0 1em 1em;
+      animation: slide 15s linear infinite;
+    }
+    .sliding-background-movil-fotos {
+      display: flex;
+      position: absolute;
+      z-index:5 ;
+      background: url('./img/dotted-map-movil-fotos.png') repeat-x;
+      width: 2841px;
+      height: 71vh;
+      margin: 2.3em 0 1em 1em;
+      animation: slide 11s linear infinite;
+    }
+    .sliding-background-movil-fotos2 {
+      display: flex;
+      position: absolute;
+      z-index:3 ;
+      background: url('./img/dotted-map-movil-fotos2.png') repeat-x;
+      width: 2841px;
+      height: 71vh;
+      margin: 2.3em 0 1em 1em;
+      animation: slide 19s linear infinite;
+    }
+  
+  }
+  
+  /* -------EXPERIENCE TEXTO----------- */
+  
+  #experience h1{
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    text-align: center;
+    padding: 1em;
+    /* margin-bottom: 1.5em; */
+  }
+  
+  .text-experiense{
+    margin: 1.2em auto;
+    /* background: chartreuse; */
+    position: relative;
+   /*  top: 90vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 50%;
+    
+  }
+  .exp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.8em;
+    width: 90%;
+    padding: 0.5em;
+  }
+  .exp p{
+    width: 70%;
+  }
+  .exp strong{
+    text-transform: uppercase;
+  }
+  
+  @media all and (max-width:500px){
+    .text-experiense{
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .exp p{
+      width: 70%;
+    }
+  }
+  
+
+  .separador{
+    height: 6em;
+  }

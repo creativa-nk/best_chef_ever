@@ -24,6 +24,10 @@ header {
   position: fixed;
   z-index: 100;
 }
+header ul a:link, a:visited, a:active {
+  text-decoration:none;
+  color: whitesmoke;
+}
 #header-title-scroll-down {
   display: block;
   position: absolute;
