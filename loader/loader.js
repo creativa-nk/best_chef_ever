@@ -10,4 +10,4 @@ var fn =  function(){
     loader.style.zIndex = '-5'
 }
 
-window.onload = function() { setInterval(fn,4000)};  //4seg
+/* window.onload = function() { setInterval(fn,4000)};  */ //4seg
