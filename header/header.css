@@ -28,19 +28,7 @@ header ul a:link, a:visited, a:active {
   text-decoration:none;
   color: whitesmoke;
 }
-#header-title-scroll-down {
-  display: block;
-  position: absolute;
-  text-align: center;
-  font-size: 2rem;
-  bottom: 10px;
-  left: 50%;
-  margin-left: -25px;
-  width: 40px;
-  height: 40px;
-  opacity: 0.4;
-  overflow-x: visible; 
-}
+
 
 .menu_movil{
   display:none;
