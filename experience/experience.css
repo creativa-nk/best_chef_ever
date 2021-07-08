@@ -55,7 +55,48 @@ header{
     margin-top: 4em;
   }
 
-  #header-title-scroll-down {
+  /* ------------------SCROLL------------------------------------- */
+  body,html  {
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .scroll-ups {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 0px 8px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 8px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { transform: translateY(30px); opacity: 1; }
+    100% { transform: translateY(3px); opacity: 0;}
+  }
+/*   #header-title-scroll-down {
     display: block;
     position: absolute;
     text-align: center;
@@ -67,7 +108,7 @@ header{
     height: 40px;
     opacity: 0.4;
     overflow-x: visible; 
-  }
+  } */
   
   /* -------animacion------------------ */
   .world{

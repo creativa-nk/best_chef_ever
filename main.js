@@ -37,8 +37,8 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-     document.getElementById("header-title-scroll-down").style.display = "none"; 
+     document.getElementById("scroll-ups").style.display = "none"; 
   } else {
-    document.getElementById("header-title-scroll-down").style.display = "block";
+    document.getElementById("scroll-ups").style.display = "block";
   }
 }
