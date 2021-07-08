@@ -56,13 +56,13 @@ header{
   }
 
   /* ------------------SCROLL------------------------------------- */
-  body,html  {
+/*   body,html  {
     background-color: rgb(32, 32, 32);
     width: 100%;
     min-height: 100%;
     padding: 0;
     margin: 0;
-  }
+  } */
   .scroll-ups {
     position: absolute;
     top: 80%;
@@ -72,6 +72,10 @@ header{
     margin: auto;
     width :34px;
     height: 55px;
+    z-index: 1;
+  }
+  .scroll-right{
+    display: none;
   }
   .mousey {
     width: 3px;

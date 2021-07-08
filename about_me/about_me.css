@@ -240,7 +240,7 @@ iframe{
     padding: 0;
     margin: 0;
   }
-  .scroll-ups {
+  .scroll-right {
     position: absolute;
     top: 80%;
     right: 0;
@@ -251,7 +251,7 @@ iframe{
     height: 55px;
     transform: rotate(-90deg);
   }
-  .mousey {
+  .scroll-right .mousey {
     width: 3px;
     padding: 12px 8px;
     height: 45px;
@@ -260,7 +260,7 @@ iframe{
     opacity: 0.75;
     box-sizing: content-box;
   }
-  .scroller {
+  .scroll-right .scroller {
     width: 3px;
     height: 10px;
     border-radius: 25%;
