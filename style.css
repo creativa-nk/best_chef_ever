@@ -30,24 +30,54 @@ html{
 
 /* ------------ENLACE DE HEADER------------------------------------ */
 header{
-  position:fixed;
+ /*  background: blue; */
+  color: white;
+  position:absolute;
   z-index: 100;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
 }
 
-iframe{
-  position: absolute;
+header iframe{
+  /* background: chartreuse; */
+  color: white;
+  position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   border-style: none;
-  z-index: 100;
-  margin-top: 0;
+  z-index: 90;
+  top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    height: 100%; 
+    width: 100%;
 }
 
 /* ----------------------------------------------------------------------- */
 
+
+/* ------------ENLACE DE FOOTER------------------------------------ */
+footer{
+  position:absolute;
+  z-index: 100;
+  bottom: 0;
+  width: 100vw;
+  height: 2.5em;
+}
+
+footer iframe{
+  /* background: chocolate; */
+  position: absolute;
+  width: 100vw;
+  height: 2.5em;
+  border-style: none;
+  z-index: 100;
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------------------------------------- */
 
 
 
