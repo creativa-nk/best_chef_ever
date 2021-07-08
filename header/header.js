@@ -9,3 +9,7 @@ toggle.on("click", function() {
     menu.addClass("active");
   }
 });
+
+function reload() {
+  window.location.reload();
+ }

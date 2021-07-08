@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
     <!-- ---------FONTS----------- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- !!! IMPORTANTE navBar-movil -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
@@ -22,10 +27,10 @@
             <div class="logo">Chef Miguel Huelamo</div>
             <div>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about_me/about_me.html">About Me </a></li>
-                    <li> <a href="../experience/experience.html">Experience</a></li>
-                    <li>Portfolio</li>
+                    <li><a href="../index.html" >Home</a></li>
+                    <li><a href="../about_me/about_me.html" onclick="reload()">About Me </a></li>
+                    <li> <a href="../experience/experience.html" onclick="reload()">Experience</a></li>
+                    <li onclick="reset()">Portfolio </li>
                     <li>Contact</li>
                     <li>Press</li>
                 </ul>
@@ -43,9 +48,9 @@
                 </div>
             
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about_me/about_me.html">About Me </a></li>
-                    <li> <a href="../experience/experience.html">Experience</a></li>
-                    <li>Portfolio</li>
+                    <li><a href="../about_me/about_me.html" onclick="reset()">About Me </a></li>
+                    <li> <a href="../experience/experience.html" onclick="reset()">Experience</a></li>
+                    <li onclick="reset()">Portfolio</li>
                     <li>Contact</li>
                     <li>Press</li>
         </ul>
@@ -55,6 +60,10 @@
 
 <!-- --------------------SCRIPT------------------------ -->
 <script src="./header.js"></script>
-
+<script>
+   function reset() {
+    location.reload();
+   }
+</script>
 </body>
 </html>
