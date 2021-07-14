@@ -8,11 +8,30 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: black;
 }
+/* ------------ENLACE DE HEADER------------------------------------ */
+header{
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  iframe{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border-style: none;
+    z-index: 100;
+    margin-top: 0;
+  }
+/* ///////////////////////////////////////////////////////////// */  
 
 .container-grid{
-    margin: 2em auto;
+    /* background: red; */
+    margin: 5em auto 5em;
     display: grid;
-    height: 370vh;
+    height: 550vh;
     width: 60vw;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(25,1fr);
