@@ -261,8 +261,22 @@ header{
   .far.fa-times-circle{
       position: absolute;
       color: white;
-      top: 6em;
-      right: 1em;
-      font-size: 1.7em;
+      top: 5em;
+      right: 0.7em;
+      font-size: 1.4em;
       cursor: pointer;
   }
+
+  @media only screen and (min-width:1024px){
+    .img-show{
+        max-height: 80%; 
+        max-width: 60%;
+    }
+
+    .far.fa-times-circle{
+        font-size: 4em;
+        top: 2em;
+        right: 2em;
+    }
+  
+}
