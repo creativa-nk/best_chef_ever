@@ -28,7 +28,7 @@ header{
 /* ///////////////////////////////////////////////////////////// */  
 
 .container-grid{
-    /* background: red; */
+    /* background: rgb(51, 50, 50); */
     margin: 5em auto 5em;
     display: grid;
     height: 650vh;
@@ -266,6 +266,7 @@ header{
       font-size: 1.4em;
       cursor: pointer;
   }
+  
 
   @media only screen and (min-width:1024px){
     .img-show{
@@ -278,5 +279,14 @@ header{
         top: 2em;
         right: 2em;
     }
-  
+    .container-grid{
+        height: 1100vh;
+    }
+    .scroll-ups {
+        transform: scale(2);
+    }
+    .img-1{
+        height: 100vh;
+    }
+
 }
