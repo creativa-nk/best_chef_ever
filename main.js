@@ -9,7 +9,7 @@
 }) */
 
 
-const toggle = document.querySelector('.toggle');
+/* const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
 
 function toggleMenu(){
@@ -24,16 +24,16 @@ function toggleMenu(){
     }else{
         menu.style.top = '-100vh' 
     }
-}
+} */
 
-function closeNav(){
+/* function closeNav(){
     document.querySelector('.menu').style.top ='-100vh'  
-}
+} */
 
 
 
 //cuando usamos el scrolls down 50px desde arriba, desaparece la flecha de scroll down
-window.onscroll = function() {scrollFunction()};
+/* window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -42,3 +42,35 @@ function scrollFunction() {
     document.getElementById("scroll-ups").style.display = "block";
   }
 }
+ */
+
+/* ---------------pestañas-----------------tabs-------------- */
+
+const targets = document.querySelectorAll('[data-target]');
+const content = document.querySelectorAll('[data-content]')
+
+targets.forEach(target =>{
+    target.addEventListener('click',() =>{
+        content.forEach(c=>{
+            c.classList.remove('active') 
+        })
+        const t = document.querySelector(target.dataset.target)
+        t.classList.add('active') 
+    })
+})
+
+/* -----------NavBar Movil--------------- */
+menu = $("nav ul");
+toggle = $("nav ul .menu");
+
+toggle.on("click", function() {
+  if (menu.hasClass("active")) {
+    menu.removeClass("active");
+  } else {
+    menu.addClass("active");
+  }
+});
+
+function reload() {
+  window.location.reload();
+ }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +14,116 @@
     <title>Best Chef Ever</title>
 
     <!-- ---------FONTS----------- -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- !!!IMPORTANTE!!!!  animacion texto experiencia-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />  <!--  !!!IMPORTANTE!!!!  animacion  -->
- 
-</head>
-<body>
-    <header id="home">
-        <iframe src="header/header.html" frameborder="0"></iframe>
-    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- !!! IMPORTANTE navBar-movil -->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+  <!-- -------------CSS---------- -->
+    <link rel="stylesheet" href="./header/header.css"> 
+    <link rel="stylesheet" href="./about_me/about_me.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     
+  </head>
+  <body>
+    <!--//////// --------------HEADER------------------------------////////////--->  
+      <header>
+          <nav>
+              <div class="menu_pc">
+              <div class="logo">Chef Miguel Huelamo</div>
+              <div>
+                  <ul>
+                      <li data-target='#home'>Home</li>
+                      <li data-target='#about_me'>About me</li>
+                      <li> <a href="../experience/experience.html">Experience</a></li>
+                      <li><a href="../gallery/gallery.html" >Gallery</a></li>
+                      <li><a  onclick="location.href='../contact/contact.html'">Contact</a></li>
+                      <li>Press</li>
+                  </ul>
+              </div>
+              </div>
+              
+              <ul class= 'menu_movil'>
+                  <div class="barra">
+                    <div class="logo">Chef Miguel Huelamo</div>
+                    <div class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                  </div>
+              
+                      <li data-target='#home'>Home</li>
+                      <li data-target='#about_me'>About me</li>
+                      <li><a onclick ="location.href='../experience/experience.html'">Experience</a></li>
+                      <li><a onclick ="location.href='../gallery/gallery.html'" >Gallery</a></li>
+                      <li><a onclick ="location.href='../contact/contact.html'">Contact</a></li>
+                      <li>Press</li>
+              </ul>
+         </nav>
+   </header>
+    <!-- END: Header Title ////////////////////////////////////////////////////////////////////////////--> 
+
+
+<!-- -------------------INICIO----------------------------------------- -->
+   <div data-content id="home">
+       <div class="page_home">
+           <h1>Inicio</h1>
+       </div> 
+   </div>
+
+<!--//////////// end inicio /////////////-->
+
+<!-- -------------- ABOUT ME ---------------------------------------------->
+
+   
+        <div data-content id="about_me" class="parallax">
+            <div class="parallax__layer parallax__layer--deep">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--back">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--base">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--front">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--front2">
+                <div class="background"></div>
+            </div>
+            <div class="parallax__layer parallax__layer--front3">
+                <div class="background"></div>
+            </div>
+
+            <div class="parallax__layer parallax__layer--front4">
+                <div class="background"></div>
+            </div> 
+        </div>
+        <div class="scroll-right">
+            <div class="mousey">
+            <div class="scroller"></div>
+            </div>
+        </div> 
+ 
+
+
+
+
+
+
+
+
+
+
+
     <footer>
         <iframe src="footer/footer.html" frameborder="0"></iframe>
     </footer>
 <!-- --------------------SCRIPT------------------------ -->
 <script src="main.js"></script>
+<script src="./header/header.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- -------IMPORTANTE!!!!!-- animacion texto experiencia----- -->
 <script>

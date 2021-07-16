@@ -1,5 +1,5 @@
 /* -----------NavBar Movil--------------- */
-menu = $("nav ul");
+/* menu = $("nav ul");
 toggle = $("nav ul .menu");
 
 toggle.on("click", function() {
@@ -8,8 +8,8 @@ toggle.on("click", function() {
   } else {
     menu.addClass("active");
   }
-});
+}); */
 
-function reload() {
+/* function reload() {
   window.location.reload();
- }
+ } */

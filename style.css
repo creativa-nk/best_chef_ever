@@ -16,7 +16,7 @@ html{
     height:100vh; 
 }
 /* ---------ENLACE LOADING ICON ------------------------------------ */
-
+/* 
   #loader{
     width: 100%;
     height: 100%;
@@ -25,12 +25,11 @@ html{
     width: 100%;
     height: 100%;
     border-style: none;
-  }
+  } */
 
 
 /* ------------ENLACE DE HEADER------------------------------------ */
-header{
- /*  background: blue; */
+/* header{
   color: white;
   position:absolute;
   z-index: 100;
@@ -40,7 +39,6 @@ header{
 }
 
 header iframe{
-  /* background: chartreuse; */
   color: white;
   position: fixed;
   width: 100vw;
@@ -53,9 +51,28 @@ header iframe{
     bottom:0px;
     height: 100%; 
     width: 100%;
+} */
+
+/* ///////////////////////////////////////////////////// */
+/* ------------------HOME------------------------------ */
+.page_home{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ----------------------------------------------------------------------- */
+
+/* ----------TABS---------- */
+[data-content]{  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  display: none;
+}
+
+.active[data-content]{
+  display: block;
+}
+
 
 
 /* ------------ENLACE DE FOOTER------------------------------------ */
