@@ -16,7 +16,7 @@ body{
 
 header {
   top: 0;
-  /* background: rgba(59, 35, 192, 0.486); */
+  background: rgba(47, 47, 48, 0.486);
   height: 4em;
   width: 100vw;
   position: fixed;
@@ -95,16 +95,15 @@ nav{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1em;
+    margin: 0 0.2em;
     }
 
     nav .menu_movil{
     display:block;
-    background-color: rgba(27, 27, 31, 0.89);
+    background-color: rgb(35, 35, 37);
     list-style: none;
     width: 100vw;
     height: 100vh;
-    /* padding: 0 0.8em 0; */
     clip-path: polygon(0 0, 100% 0, 100% 4em, 0 4em); /* !!!!!importante */
     }
 
@@ -123,29 +122,29 @@ nav{
     }
 
     nav .menu_movil li:hover{
-    transform: scale(1.8);
+    transform: scale(1.5);
     cursor: pointer;
     }
 
     nav ul .menu{
-    /* background: burlywood; */
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin-top: 1em;
-    margin-left: 24px;
-    align-items: center;
-    }
-
-    nav ul .menu span{
-    display: block;
-    background: #FFF;
-    width: 30px;
-    height: 3px;
-    margin: auto;
-    margin-top: 6px;
-    transition: all .5s ease;    
-    }
+     /*  background: burlywood; */
+      width: 70px;
+      height: 50px;
+      position: relative;
+      margin-top: 1em;
+      margin-left: 24px;
+      align-items: center;
+      }
+  
+      nav ul .menu span{
+      display: block;
+      background: #FFF;
+      width: 30px;
+      height: 3px;
+      margin: auto;
+      margin-top: 6px;
+      transition: all .5s ease;    
+      }
 
     nav ul.active .menu span:nth-child(1){
     transform: rotate(45deg);

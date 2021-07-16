@@ -28,12 +28,12 @@ function toggleMenu(){
 
 /* function closeNav(){
     document.querySelector('.menu').style.top ='-100vh'  
-} */
-
+}
+ */
 
 
 //cuando usamos el scrolls down 50px desde arriba, desaparece la flecha de scroll down
-/* window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -42,7 +42,7 @@ function scrollFunction() {
     document.getElementById("scroll-ups").style.display = "block";
   }
 }
- */
+
 
 /* ---------------pestañas-----------------tabs-------------- */
 
@@ -61,6 +61,7 @@ targets.forEach(target =>{
 
 /* -----------NavBar Movil--------------- */
 menu = $("nav ul");
+btn = $("nav .menu_movil li");
 toggle = $("nav ul .menu");
 
 toggle.on("click", function() {
@@ -70,6 +71,10 @@ toggle.on("click", function() {
     menu.addClass("active");
   }
 });
+
+btn.on('click',function(){
+   menu.removeClass("active"); /*  cierra menu dando a cualquier opcion del menu */
+})
 
 function reload() {
   window.location.reload();

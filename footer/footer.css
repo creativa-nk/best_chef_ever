@@ -1,28 +1,17 @@
 /*  <!--Start -----FOOTER----- --> */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body,html{
-    /* background: chartreuse; */
-    width: 100vw;
-    height: 100vh;
-}
 
 footer {
     background-color:rgba(83, 82, 82, 0.513);
-    padding: 0.6em;
+    height: 2rem;
     width: 100vw; 
     bottom: 0;
     position:fixed;
     z-index: 2;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
   }
   p{
-    text-align: end;
     margin-right: 1em;
     font-size: 0.7em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

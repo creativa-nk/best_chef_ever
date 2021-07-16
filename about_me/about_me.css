@@ -43,7 +43,7 @@ iframe{
   }
   .parallax__layer {
     position: absolute;
-    top: 0;
+    top: 4em;
     left: 0;
     right: 0;
     bottom: 0;
@@ -98,7 +98,7 @@ iframe{
     z-index: 7;
   }
   .parallax__layer--deep .background {
-    top: 50px;
+    top: 30px;
     right: 0;
     bottom: 0;
     left: 50px;  
@@ -115,13 +115,13 @@ iframe{
   .parallax__layer--back .background {
     opacity: 0.9;
     top: 0;
-    right: 0px;
+    right: 50px;
     bottom: 0;
     left: 0; 
      /*  background-repeat: repeat-x; */
     background-repeat: no-repeat;
     background-position: bottom center;  
-    background-size: 70vh;
+    background-size: 72vh;
     background-image: url('./img_about_me/miguel_huelamo.png');
   
   }
@@ -147,10 +147,10 @@ iframe{
     z-index: 10;
   }
   .parallax__layer--base .background {
-    top: 0;
+    top: -70px;
     right: 0;
     bottom: 0;
-    left: 250px;
+    left: 230px;
    /*  background-repeat: repeat-x; */
    background-repeat: no-repeat;
     background-position: bottom center;  
@@ -163,14 +163,14 @@ iframe{
     z-index: 9;
   }
   .parallax__layer--front2 .background {
-    top: 0;
+    top: -40px;
     right: 0px;
     bottom:0;
     left: 480px;
    /*  background-repeat: repeat-x; */
    background-repeat: no-repeat;
     background-position: bottom center;  
-    background-size: 110vh;  
+    background-size: 108vh;  
     background-image: url('./img_about_me/parrafo2_plato.png');
   }
 
@@ -196,7 +196,7 @@ iframe{
   }
   .parallax__layer--front4 .background {
     opacity: 0.92;
-    top: 0;
+    top: -40px;
     right: 0px;
     bottom:0;
     left: 1100px;
