@@ -4,26 +4,8 @@ body{
     background: #272727;
 }
 
-/* ------------ENLACE DE HEADER------------------------------------ */
-header{
-    position:absolute;/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    z-index: 100;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  iframe{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    border-style: none;
-    z-index: 0;
-    margin-top: 0;
-  }
-/* ///////////////////////////////////////////////////////////// */  
 
-.container{
+.container_contact{
     /* background: red; */
     margin: 20% auto;
     width: 90vw;
@@ -32,6 +14,7 @@ header{
 }
 
 .go{
+    cursor: pointer;
     text-align:center;
     font-size: 7rem;
     outline:none;
@@ -46,14 +29,14 @@ header{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.7) ,-5px -5px 10px rgba(255,255,255,0.1); 
   }
   
-  .go:focus{
+  .go:active{
         box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
   }
 
 
 
   @media all and (max-width:768px){
-      .container{
+      .container_contact{
           flex-direction: column;
           margin: 10% auto;
           height: 90vh;

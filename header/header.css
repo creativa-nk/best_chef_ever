@@ -72,6 +72,7 @@ nav{
 .menu_pc ul li{
   list-style-type: none;
   margin-right:2em;
+  cursor: pointer;
 }
 
 .logo{

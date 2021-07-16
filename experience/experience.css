@@ -24,9 +24,6 @@ body{
     height: 55px;
     z-index: 5;
   }
-  .scroll-right{
-    display: none;
-  }
   .mousey {
     width: 3px;
     padding: 0px 8px;
@@ -53,20 +50,27 @@ body{
 
   /* -------animacion------------------ */
   .world{
+   /*  background: turquoise; */
     display: flex; 
-    align-items: center;
-    justify-content: center; 
-    width: auto;
-    overflow: hidden;
-    white-space: nowrap;
+    
+  /*   overflow: hidden;
+    white-space: nowrap; */
   }
   
   /* .contenedor_img_slider{
     display: none;
   } */
     
-  .sliding-background {
-    margin: 7em 0 2em 1.5em;
+  .sliding-background{
+    margin: 7em 0 2em 2.5em;
+    /* background-color: red; */
+    background-image: url('./img/dotted-map-blanco-movil-marcas.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 70vw;
+    margin: 3rem auto;
+   
   }
   
      @keyframes slide {
@@ -164,7 +168,7 @@ body{
   .exp p{
     width: 70%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .exp strong{
     text-transform: uppercase;
