@@ -79,3 +79,6 @@ btn.on('click',function(){
 function reload() {
   window.location.reload();
  }
+
+
+ 
