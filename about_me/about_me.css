@@ -76,7 +76,7 @@ iframe{
   }
 
   .parallax__layer--deep {
-    transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(2);
   }
 
  
@@ -100,14 +100,14 @@ iframe{
     z-index: 7;
   }
   .parallax__layer--deep .background {
-    top: 30px;
+    top: -60px;
     right: 0;
     bottom: 0;
-    left: 50px;  
+    left: 0px;  
       /*  background-repeat: repeat-x; */
    background-repeat: no-repeat;
     background-position: top center;  
-    background-size: 85vh;
+    background-size: 100vh;
       background-image:   url('./img_about_me/cita.png');
   }
   .parallax__layer--back {
@@ -152,7 +152,7 @@ iframe{
     top: -70px;
     right: 0;
     bottom: 0;
-    left: 230px;
+    left: 150px;
    /*  background-repeat: repeat-x; */
    background-repeat: no-repeat;
     background-position: bottom center;  
@@ -197,7 +197,6 @@ iframe{
     z-index: 9;
   }
   .parallax__layer--front4 .background {
-    opacity: 0.92;
     top: -40px;
     right: 0px;
     bottom:0;
@@ -227,6 +226,7 @@ iframe{
     .parallax__layer--base .background{
       background-size: 90vh;
       top: -120px;
+      left: 100px;
     }
     .parallax__layer--front2 .background {
       background-size: 95vh;

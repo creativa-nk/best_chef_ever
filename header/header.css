@@ -51,6 +51,10 @@ nav{
     color: white;
     font-size: 1.7em;
 }
+.logo.active{
+  color: red;
+  font-weight: bold;
+}
 
 .menu_pc{
 /*  // background:green; */

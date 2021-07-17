@@ -63,16 +63,20 @@ targets.forEach(target =>{
 menu = $("nav ul");
 btn = $("nav .menu_movil li");
 toggle = $("nav ul .menu");
+logo = $('nav .menu_movil .logo')
 
 toggle.on("click", function() {
   if (menu.hasClass("active")) {
     menu.removeClass("active");
+    logo.removeClass("active");
   } else {
     menu.addClass("active");
+    logo.addClass("active");
   }
 });
 
 btn.on('click',function(){
+  logo.removeClass("active");
    menu.removeClass("active"); /*  cierra menu dando a cualquier opcion del menu */
 })
 
