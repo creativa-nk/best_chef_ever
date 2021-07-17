@@ -5,7 +5,8 @@
 }
 
 body{
-  background: rgb(32, 31, 31);
+  /* background: rgb(32, 31, 31); */
+  background: rgb(54, 53, 53);
   height: 100vh;
   width: 100vw;
   color: white;

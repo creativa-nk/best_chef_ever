@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: black;
+#gallery{
+ background: black;
+ width: 100vw;
+ height: auto;
 }
 /* ------------ENLACE DE HEADER------------------------------------ */
 /* header{
@@ -29,7 +30,7 @@ body{
 
 .container-grid{
     /* background: rgb(51, 50, 50); */
-    margin: 5em auto 5em;
+    margin: 0 auto 5em;
     display: grid;
     height: 650vh;
     width: 60vw;
