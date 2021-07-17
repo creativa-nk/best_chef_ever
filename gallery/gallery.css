@@ -29,7 +29,7 @@
 /* ///////////////////////////////////////////////////////////// */  
 
 .container-grid{
-    /* background: rgb(51, 50, 50); */
+   /*  background: red; */
     margin: 0 auto 5em;
     display: grid;
     height: 650vh;
@@ -83,7 +83,7 @@
 
 .img-1{
     grid-area: img1;
-    height: 85vh;
+    height: 100vh;
 }
 .img-2{
     grid-area: img2;
