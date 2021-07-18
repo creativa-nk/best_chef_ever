@@ -227,12 +227,13 @@
       background-size: 90vh; 
       top: -100px;
     }
+
   }
 /* ------------------SCROLL------------------------------------- */
 
   .scroll-right {
     position: absolute;
-    top: 80%;
+    top: 83%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -244,7 +245,7 @@
   }
   .scroll-right .mousey {
     width: 3px;
-    padding: 12px 8px;
+    padding: 12px 6px;
     height: 45px;
     border: 2px solid #fff;
     border-radius: 25px;
