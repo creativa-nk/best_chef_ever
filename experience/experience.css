@@ -134,21 +134,24 @@ body{
   }
   
   /* -------EXPERIENCE TEXTO----------- */
-  
+
   #experience h1{
+
     letter-spacing: 3px;
     word-spacing: 7px;
     text-align: center;
-    padding: 1em;
+    padding: 4em 1rem 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     /* margin-bottom: 1.5em; */
   }
   
   .text-experiense{
+    background-image: url('./img/fondo_experience.png');
+    background-size: cover;
     margin: 1.2em auto;
     /* background: chartreuse; */
-    position: relative;
+
    /*  top: 90vh; */
     display: flex;
     flex-direction: column;
@@ -160,6 +163,7 @@ body{
   }
   .exp{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 2.8em;
     width: 90%;
