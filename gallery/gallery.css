@@ -11,13 +11,14 @@
 } 
 
 .container-grid{
-   /*  background: red; */
-    margin: 0 auto 5em;
+    /* background: red; */
+    margin: 0 auto 15em;
+    
     display: grid;
-    height: 650vh;
+    height: 680vh;
     width: 60vw;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(26,1fr);
+    grid-template-rows: repeat(27,1fr);
     grid-template-areas:
     'img1 img1 img1 img1 img1'
     
@@ -55,6 +56,9 @@
     ;
     gap: 8px;
 }
+.separedor{
+    height: 50px;
+} 
 
 .img{
     width: 100%;
@@ -233,6 +237,7 @@
   .img-show{
       /* width: 70%; */ /* portatil */
       width: 90%;
+      margin: 0 auto;
       display: block;
       object-fit: cover; /* no destorsiona la img */
       transform: scale(0);
@@ -253,10 +258,15 @@
   
 
   @media only screen and (min-width:1024px){
-    .img-show{
+    .imagen{
+        /* background: red; */
         max-height: 80%; 
-        max-width: 60%;
+        max-width: 80%; 
     }
+    .imagen img{
+        max-width: 70vw;
+    }
+   
 
     .far.fa-times-circle{
         font-size: 4em;
