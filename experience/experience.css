@@ -13,61 +13,22 @@ body{
   }
 
   /* ------------------SCROLL------------------------------------- */
-  .scroll-ups {
-    position: absolute;
-    top: 80%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width :34px;
-    height: 55px;
-    z-index: 5;
-  }
-  .mousey {
-    width: 3px;
-    padding: 0px 8px;
-    height: 45px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-  }
-  .scroller {
-    width: 3px;
-    height: 8px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 1.3s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-  }
-  @keyframes scroll {
-    0% { transform: translateY(30px); opacity: 1; }
-    100% { transform: translateY(3px); opacity: 0;}
-  }
+ /* el mismo que de gallery.css */
 
   /* -------animacion------------------ */
   .world{
    /*  background: turquoise; */
     display: flex; 
-    
-  /*   overflow: hidden;
-    white-space: nowrap; */
   }
-  
-  /* .contenedor_img_slider{
-    display: none;
-  } */
     
   .sliding-background{
-    margin: 7em 0 2em 2.5em;
+    /* margin: 7em 0 2em 2.5em; */
     /* background-color: red; */
     background-image: url('./img/dotted-map-blanco-movil-marcas.png');
-    background-size:100%;
+    background-size:90%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 80vh;
     width: 70vw;
     margin: 3rem auto;
    
@@ -88,7 +49,7 @@ body{
     }
     .contenedor_img_slider{
       width: 100vw;
-      height: 90vh;
+      height: 80vh;
       position: relative;
       overflow: hidden;
     }
@@ -148,10 +109,8 @@ body{
   .text-experiense{
     background-image: url('./img/fondo_experience.png');
     background-size: cover;
-    margin: 1.2em auto;
+    margin: 8em auto;
     /* background: chartreuse; */
-
-   /*  top: 90vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,6 +136,8 @@ body{
     text-transform: uppercase;
     color: red;
     font-size: 1rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
   }
   .exp strong span{
     color: white;
@@ -194,5 +155,5 @@ body{
   
 
   .separador{
-    height: 5em;
+    height: 10em;
   }

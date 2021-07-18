@@ -12,6 +12,8 @@
 
 .container-grid{
     /* background: red; */
+    background-image: url('../experience/img/fondo_experience.png');
+    background-size: cover;
     margin: 0 auto 15em;
     
     display: grid;
@@ -179,6 +181,7 @@
 
   /* ------------------SCROLL------------------------------------- */
   .scroll-ups {
+    /* background: red; */
     position: absolute;
     top: 80%;
     right: 0;
@@ -198,6 +201,7 @@
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
+    margin:10% auto;
   }
   .scroller {
     width: 3px;
@@ -213,6 +217,16 @@
     0% { transform: translateY(30px); opacity: 1; }
     100% { transform: translateY(3px); opacity: 0;}
   }
+
+    @media only screen and (min-width:1024px){
+        .mousey {
+            padding: 0px 4px;
+            height: 35px;
+        }
+        .scroll-ups {
+            top: 70%;
+        }
+    }
 
   /* -------------------LIGHTBOX------------------------ */
   .container-img{
