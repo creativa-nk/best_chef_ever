@@ -1,35 +1,11 @@
 
-/*   body, html {
-    height: 100%;
-    font-family: 'VT323', sans-serif;
-  } */
-  /* ------------ENLACE DE HEADER------------------------------------ */
-/* header{
-  position:absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-iframe{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  border-style: none;
-  z-index: 100;
-  margin-top: 0;
-} */
-
 /* ----------------------------------------------------------------------- */ 
- /*  #about_me{
-    width: 150vw;
+  #about_me{
+    width: 100vw;
     height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;
-  } */
+  }
   
   /* Parallax base styles
     --------------------------------------------- */
@@ -87,9 +63,9 @@ iframe{
   }
   
   /* Art */
-  body {
+/*   body {
     background: linear-gradient(#2c2c2eea 0%, #575758 100%);
-  }
+  } */
   .background {
     position: absolute;
     display: block;
@@ -263,7 +239,7 @@ iframe{
     margin: auto;
     width :34px;
     height: 55px;
-    z-index: 5;
+    z-index: 10;
     transform: rotate(-90deg);
   }
   .scroll-right .mousey {
