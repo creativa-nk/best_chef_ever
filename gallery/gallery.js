@@ -1,7 +1,7 @@
 const images = document.querySelectorAll('.img'); /* todas la imagenes que tengan classe img */
 const containerImage = document.querySelector('.container-img');
 const imageContainer = document.querySelector('.img-show');
-const closeContainer = document.querySelector('.far.fa-times-circle');
+const closeContainer = document.querySelector('.x');
 
 images.forEach(image =>{
     image.addEventListener('click',() => {
@@ -18,7 +18,7 @@ const addImage = (srcImage, altImage)=>{
 }
 
 /* ------------cerrar container-------- */
-closeContainer.addEventListener('click',() =>{ /* cuando cerramos el container */
+  closeContainer.addEventListener('click',() =>{ /* cuando cerramos el container */
   containerImage.classList.toggle('move'); 
   imageContainer.classList.toggle('show');
 })

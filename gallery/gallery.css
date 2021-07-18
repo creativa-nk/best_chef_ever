@@ -8,25 +8,7 @@
  background: black;
  width: 100vw;
  height: auto;
-}
-/* ------------ENLACE DE HEADER------------------------------------ */
-/* header{
-    position:absolute;
-    z-index: 100;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  iframe{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    border-style: none;
-    z-index: 0;
-    margin-top: 0;
-  } */
-/* ///////////////////////////////////////////////////////////// */  
+} 
 
 .container-grid{
    /*  background: red; */
@@ -201,7 +183,7 @@
     margin: auto;
     width :34px;
     height: 55px;
-    z-index: 1;
+    z-index: 0;
   }
   .scroll-right{
     display: none;
@@ -243,6 +225,7 @@
       align-items: center;
       transform: translateX(-100%); /* esconder a la izquierda */
       transition: transform .4s ease-in;
+      z-index: 1;
   }
   .move{
       transform: translateX(0);
@@ -259,12 +242,12 @@
     transform: scale(1);
 }
   
-  .far.fa-times-circle{
+ .x{
       position: absolute;
       color: white;
-      top: 5em;
+      top: 4em;
       right: 0.7em;
-      font-size: 1.4em;
+      font-size: 1.7em;
       cursor: pointer;
   }
   
