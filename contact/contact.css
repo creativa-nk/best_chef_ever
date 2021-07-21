@@ -1,18 +1,23 @@
-#contact{
-    margin:0;
-    padding: 0;
+body{
     width: 100vw;
     height: 100vh;
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     background: rgba(86,88,91,1);
 }
 
 
 .container_contact{
-    /* background: red; */
-    margin: 20% auto;
-    width: 90vw;
+    /* background: #ff0000; */
+    width: 100vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+   
 }
 
 .go{
@@ -38,16 +43,23 @@
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.7) , inset -5px -5px 10px rgba(255,255,255,0.1);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     color: white;
+    
   }
 
 
+  @media all and (max-width:1024px){
+    .go{
+        width: 15rem;
+        height: 15rem;
+    }
+  }
 
 
   @media all and (max-width:768px){
       .container_contact{
           flex-direction: column;
-          margin: 10% auto;
-          height: 90vh;
+         /*  margin: 10% auto; */
+          height: 100vh;
           align-items: center;
           justify-content: space-evenly;
       }
