@@ -12,10 +12,9 @@
 
 .container-grid{
     /* background: red; */
-    background-image: url('../experience/img/fondo_experience.png');
-    background-size: cover;
+  /*   background-image: url('../experience/img/fondo_experience.png');
+    background-size: cover; */
     margin: 0 auto 15em;
-    
     display: grid;
     height: 680vh;
     width: 60vw;
