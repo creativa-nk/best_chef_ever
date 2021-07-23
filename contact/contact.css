@@ -47,10 +47,11 @@
   }
 
 
-  @media all and (max-width:1024px){
+  @media all and (max-width:1440px){
     .go{
         width: 15rem;
         height: 15rem;
+        margin-top:30%;
     }
   }
 
