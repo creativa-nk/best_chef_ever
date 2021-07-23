@@ -33,7 +33,7 @@
     /* background-size: ; */ /*  para que la img se ajuste a contenedor */
     background-position: 50% 50%;  /* pare centrar el trozo de img que queremos enseñar */
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* !!!!!IMPORTANTE!!!! se hace con la heramienta de clip-path  y sera la posicion INICIAL para animacion */
-    animation: show 3s 3s ease-out forwards; /* FORWARDS- una vez termina la animation el elemento se quedara con los estilos donde termina y no con su estado inicial(en este caso cerrado) */
+    animation: show 3s 4s ease-out forwards; /* FORWARDS- una vez termina la animation el elemento se quedara con los estilos donde termina y no con su estado inicial(en este caso cerrado) */
                                       /* ease el modo de como aparece la imagen, por defecto es ease aun que no lo pongas. se puede personalizar con https://cubic-bezier.com/#.17,.67,.83,.67 */
                                       /* cubic-bezier(.47,.25,.25,.89) por ejemplo */  
 }
@@ -51,7 +51,7 @@
     transform: translate(30%);
     /* animation: move 2s 2s forwards; */ /* dere 2s y que espere 2s para ejecutarse */
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); /*  para que el texto aparezca dedde abajo asia arriba */
-    animation: show 2s ease forwards, move 1s 2s forwards ;  
+    animation: show 3s ease forwards, move 1s 3s forwards ;  
 }
 .grid_title{
     font-size: 2.5rem;
@@ -66,7 +66,7 @@
     font-size: 4rem;
     letter-spacing: 3px;
     transform: translate(20%);
-    animation: move 1s  2s forwards;
+    animation: move 1s  3s forwards;
 }
 
 /* !!!! Importante !!!! en la aninacion no ponemos un estado inicial (0% o from) poque cada elemento ya tiene su estado inicial que hemos puesto con clip-path Asi que solo ponemos 100% o to */
