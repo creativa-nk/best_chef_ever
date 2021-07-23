@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -89,19 +89,24 @@
     @media all and (max-width:500px){
       
         .grid_title{
-            font-size: 1.5rem;  
+            font-size: 1.5rem; 
         }
         .grid_title--transform{
-            font-size: 2.4rem;
+            font-size: 2.4rem;       
         }
-
         .grid_texts{
             transform: translate(30%);  
         }
+        .grid::before{
+            grid-column: 3/-1;
+            background-image: url('../gallery/img/inicio4.png');
+            background-position: 0% 50%;
+        }
+
 
         @keyframes move{
             to{
-                transform: translate(4%);
+                transform: translate(5%);
             }
         }
        
