@@ -36,8 +36,9 @@
     /* animation: show 3s 4s ease-out forwards; */ /* FORWARDS- una vez termina la animation el elemento se quedara con los estilos donde termina y no con su estado inicial(en este caso cerrado) */
                                       /* ease el modo de como aparece la imagen, por defecto es ease aun que no lo pongas. se puede personalizar con https://cubic-bezier.com/#.17,.67,.83,.67 */
                                       /* cubic-bezier(.47,.25,.25,.89) por ejemplo */
-    animation: move 3s 4s ease-out forwards;                                 
-    transform: translate(100%);                                 
+    opacity: 0;
+    animation: appear 3s 4s ease-in-out forwards;                                 
+    /* transform: translate(100%);    */                              
 }
 
 .grid_texts{
@@ -85,8 +86,25 @@
     }
 }
 
+@keyframes appear{
+    to{
+        opacity: 1;
+    }
+}
 
 
+    @media all and (max-width:768px){
+        .grid_texts{
+            transform: translate(10%);
+            margin-left: 20px;
+        }
+        .grid_title{
+            font-size: 2rem;
+        }
+        .grid_title--transform{
+            font-size: 3rem;
+        }
+    }
 
 
     @media all and (max-width:500px){
@@ -97,21 +115,15 @@
         .grid_title--transform{
             font-size: 2.4rem;       
         }
-        .grid_texts{
-            transform: translate(30%);  
-        }
         .grid::before{
             grid-column: 2/-1;
             background-image: url('../gallery/img/inicio_otro_1_mobil.png');
             background-position: 0% 50%;
+            opacity: 1;
+            animation: move 3s 4s ease-out forwards;                                 
+            transform: translate(100%);  
         }
 
-
-        @keyframes move{
-            to{
-                transform: translate(5%);
-            }
-        }
        
 
     }
