@@ -54,8 +54,9 @@
     transform: translate(30%);
     /* animation: move 2s 2s forwards; */ /* dere 2s y que espere 2s para ejecutarse */
     /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); */ /*  para que el texto aparezca dedde abajo asia arriba */
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    animation: show 3s ease forwards, move 1s 3s forwards ;  
+    /* clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); */
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: show 4s ease forwards, move 1s 3s forwards ;  
 }
 .grid_title{
     font-size: 2.5rem;
@@ -119,9 +120,9 @@
             grid-column: 2/-1;
             background-image: url('../gallery/img/inicio_otro_1_mobil.png');
             background-position: 0% 50%;
-            opacity: 1;
+           /*  opacity: 1;
             animation: move 3s 4s ease-out forwards;                                 
-            transform: translate(100%);  
+            transform: translate(100%);   */
         }
 
        
