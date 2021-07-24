@@ -43,7 +43,7 @@ nav{
 
 
 .logo{
-    /* background: chartreuse; */
+   /*  background: chartreuse; */
     display: flex;
     align-items: center;
     width: auto;
@@ -57,7 +57,7 @@ nav{
 }
 
 .menu_pc{
-/*  // background:green; */
+  /* background:green; */
   color:white;
   display:flex;
   height:4em;
@@ -65,8 +65,8 @@ nav{
   justify-content:space-between;
 }
 .menu_pc ul{
-/*  // background:red; */
-  width:80vw;
+ /*  background:red; */
+  width:auto;
   height:4em;
   align-items: center;
   display:flex;
@@ -85,7 +85,7 @@ nav{
 
 
 
-@media all and (max-width:768px){
+@media all and (max-width:840px){
     .menu_pc{
     display:none;
     }
