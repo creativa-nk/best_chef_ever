@@ -86,6 +86,3 @@ function reload() {
 
 
  /* -------------CONTACTO--------retrasar el link------------- */
-
-
- 

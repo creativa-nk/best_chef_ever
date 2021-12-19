@@ -94,6 +94,63 @@ body{
     }
   
   }
+  /* -------------LOADING---------- */
+  .loading-wrapper{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgb(22, 22, 22);
+    position: absolute;
+    z-index: 11;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    animation: scale 2.3s linear infinite;
+    -webkit-animation: scale 2.3s linear infinite;
+}
+  .loading-sliding-background {
+    display: flex;
+    position: absolute;
+    z-index: 11;
+    width: 220px;
+    height: 100%;
+    background-size:50% 90%;
+    background-repeat: repeat-x;
+    background-image: url('./img/dotted-map-blanco-movil-marcas.png');
+    animation: slide 5s linear infinite;
+    -webkit-animation: slide 5s linear infinite;
+}       
+  
+@keyframes slide {
+    0%{
+    transform: translate3d(0, 0, 0);
+    }
+    100%{
+    transform: translate3d(-110px, 0, 0);
+    -webkit-transform: translate3d(-110px, 0, 0);
+    -moz-transform: translate3d(-110px, 0, 0);
+    -ms-transform: translate3d(-110px, 0, 0);
+    -o-transform: translate3d(-110px, 0, 0);
+    }
+}
+/* @keyframes scale{
+  0%, 50%,100%{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+25%, 75%{
+  transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -ms-transform: scale(.9);
+  -o-transform: scale(.9);
+}
+} */
   
   /* -------EXPERIENCE TEXTO----------- */
 
