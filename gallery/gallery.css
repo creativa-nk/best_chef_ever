@@ -9,6 +9,9 @@
  width: 100vw;
  height: auto;
 } 
+#gallery .loading{
+  background: black;  
+}
 
 .container-grid{
     /* background: red; */

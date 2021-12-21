@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-		background: rgb(0, 0, 0);
+		background: rgb(54, 53, 53);
 	}
   .cangrejo{
     animation: zoomIn 6s linear forwards;
