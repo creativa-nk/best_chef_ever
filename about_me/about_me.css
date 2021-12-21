@@ -32,7 +32,7 @@
     align-items: center;
 		background: rgb(54, 53, 53);
 	}
-  .cangrejo{
+  .cangrejo, .pescado{
     animation: zoomIn 6s linear forwards;
     -webkit-animation: zoomIn 6s linear forwards;
   }
