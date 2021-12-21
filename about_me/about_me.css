@@ -37,31 +37,31 @@
     -webkit-animation: zoomIn 6s linear forwards;
   }
   .humo{
-    transform: scale(.7);
-    -webkit-transform: scale(.7);
-    -moz-transform: scale(.7);
-    -ms-transform: scale(.7);
-    -o-transform: scale(.7);
-    transform-origin: unset;
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
+    transform-origin: center;
     animation: humo 2s linear infinite;
     -webkit-animation: humo 2s ease-in-out infinite;
 }
 
 @keyframes humo{
   50%{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform-origin: unset;
-  }
-  100%{
     transform: scale(.7);
     -webkit-transform: scale(.7);
     -moz-transform: scale(.7);
     -ms-transform: scale(.7);
     -o-transform: scale(.7);
+    transform-origin: unset;
+}
+  100%{
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -o-transform: scale(.5);
     transform-origin: unset;
 }
 }
