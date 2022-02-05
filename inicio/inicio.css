@@ -9,6 +9,7 @@
     background: rgb(37, 36, 36);
     height: 100vh;
 }
+::-webkit-scrollbar {display: none;}
 
 .grid{
     /* background: rgb(82, 71, 71); */
